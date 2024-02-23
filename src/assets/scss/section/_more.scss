@@ -1,0 +1,128 @@
+.more_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--maincolor01);
+
+    .more_header {
+        display: flex;
+        align-items: center;
+        margin-top: 6rem;
+        justify-content: center;
+
+
+    }
+
+    .more {
+        background-color: var(--white);
+        width: 100%;
+        height: 90vh;
+        border-radius: 50px 50px 0 0;
+        padding: 20px;
+
+        .more-line {
+          border: 2px solid #999999;
+          margin: 0 100px 20px;
+        }
+
+        .more-content-wrap {
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+            padding: 25px;
+            height: 65vh;
+            overflow-y: scroll;
+            justify-content: space-between;
+            width: 100%;
+            background-color: #fbdcdc;
+            border-radius: 30px;
+
+            &::-webkit-scrollbar {
+              width: 8px;  /* 스크롤바의 너비 */
+            }
+          
+            &::-webkit-scrollbar-thumb {
+              height: 3px; /* 스크롤바의 길이 */
+              background: #FF6D6D; /* 스크롤바의 색상 */
+              border-radius: 10px;
+            }
+          
+            &::-webkit-scrollbar-track {
+              background: linen;
+              border-radius: 10px;
+            }
+            &::-webkit-scrollbar-button:vertical:start:decrement {
+              display: block;
+              height: 35px; 
+            }
+            &::-webkit-scrollbar-button:vertical:end:increment {
+              display: block;
+              height: 35px;
+            }
+
+            .more-content-video {
+                padding: 10px 0;
+                border-radius: 10px;
+
+                .more-content-footer {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 10px;
+                    background-color: #FF6D6D;
+                    width: auto;
+                    height: 60px;
+                    border-radius: 0 0 10px 10px;
+
+                    .more-letter-wrap {
+                        flex-direction: column;
+
+                        .more-footer-category {
+                            color: #FFFFFF;
+                            font-size: 11px;
+                            margin-left: 5px;
+
+                        }
+
+                        .more-footer-title {
+                            color: #FFFFFF;
+                            font-weight: 700;
+                            line-height: 30px;
+                            margin-left: 5px;
+
+                        }
+                    }
+
+                    .more-bookmark {
+                        
+                        align-items: center;
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+        
+    }
+
+}
+
+.video-container {
+    position: relative;
+    padding-top: 10px;
+    margin: 0 auto;
+    width: 10 0%;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+
+    .react-player {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}

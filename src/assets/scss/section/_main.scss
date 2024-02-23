@@ -1,0 +1,294 @@
+@keyframes fadeout {
+  0% {
+    opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+.main-container {
+  min-height: 100vh;
+
+  .main_wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%;
+      height: 100vh;
+      background-color: var(--maincolor01);
+  
+      .header {
+          padding: 55px 0 15px;
+  
+          img {
+              width: 40px;
+          }
+  
+          .header-start {
+              margin-top: 10px;
+              padding: 10px;
+              width: 100%;
+              border-radius: 10px;
+              font-weight: bolder;
+              box-shadow: 0px 3px 0px 0px #00000072;
+              background: linear-gradient(90deg,linen, #fee4e2);
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+  
+              .header-subtext {
+                font-size: 12px;
+                font-weight: bolder;
+                color: #595959;
+              }
+  
+              .header-title {
+                font-size: 18px;
+                font-weight: bolder;
+                margin-top: 8px;
+              }
+              
+              .header-btn {
+                background-color: var(--maincolor01);
+                height: 28px;
+                width: 80px;
+                padding-top: 5px;
+                border-radius: 10px;
+                margin: 5px 0;
+                font-size: 13px;
+                font-weight: bolder ;
+                color: var(--white);
+                
+              }
+              .header-btn:hover {
+                background-color: var(--white);
+                color: var(--maincolor01);
+                border: 3px solid var(--maincolor01);
+              }
+          }
+  
+          .moveMyPage {
+              margin-top: 10px;
+              display: flex;
+              align-items: center;
+              width: 100%;
+              border-radius: 60px;
+              background-color: var(--white);
+              justify-content: center;
+              padding-top: 8px;
+              padding-bottom: 3px;
+              box-shadow: 0px 3px 0px 0px #00000072;
+  
+              img {
+                  margin-bottom: 6px;
+                  width: 25px;
+                  margin-right: 2px;
+              }
+          }
+          .subBtn-boxWrap {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 14px;
+            width: 320px;
+            cursor: pointer;
+  
+            .subBtn-box {
+                background: linear-gradient(90deg,linen, #fee4e2);
+                height: 90px;
+                padding: 15px;
+                width: 48%;
+                border-radius: 15px;
+                font-size: 14px;
+                font-weight: bolder;
+                color: black;
+                box-shadow: 0px 3px 0px 0px #00000072;
+  
+                .box-header{
+                    display: flex;
+                    justify-content: space-between;
+  
+                    .box-title {
+                      font-size: 16px;
+                      font-weight: bolder;
+                    }
+  
+                    .rightAB {
+                      width: 8px;
+                      height: 14px;
+                      margin-top: 2 px;
+                      transform: rotate(180deg);
+                    }
+                }
+  
+                .box-content {
+                  display: flex;
+                  justify-content: space-between;
+                  margin-top: 3px;
+                  font-size: 12px;
+                  font-weight: bold;
+                  color: #595959;
+                }
+  
+                .box-icon {
+                  display: flex;
+                  justify-content: end;
+                  margin-top: -3px;
+                }
+            }
+  
+        }
+      }
+  
+      .main {
+          background-color: var(--white);
+          width: 100%;
+          //height: 65vh;
+          height: 90vh;
+          border-radius: 50px 50px 0 0;
+          padding: 20px;
+  
+          .main-line {
+              border: 2px solid #999999;
+              margin: 0 100px 5px;
+          }
+  
+          .propose {
+              //margin-top: 20px;
+              display: flex;
+              flex-wrap: wrap;
+  
+  
+              .propose_header {
+                  display: flex;
+                  align-items: center;
+                  width: 100%;
+                  margin-top: 20px;
+  
+                  h2 {
+                      font-size: 22px;
+                      font-weight: 900;
+                  }
+  
+                  a {
+                      margin-left: 10px;
+                  }
+              }
+  
+              .video-container {
+                  position: relative;
+                  width: 200px;
+                  height: 0;
+                  padding-bottom: 56.25%;
+                  overflow: hidden;
+  
+                  .react-player {
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      width: 100%;
+                      height: 100%;
+                  }
+              }
+  
+              .main-content-wrap {
+                  display: flex;
+                  overflow-x: auto;
+                  overflow-y: hidden;
+                  width: 100%;
+                  padding-bottom: 10px;
+                  margin-bottom: -10px;
+                  white-space: nowrap;
+
+                  &::-webkit-scrollbar {
+                    height: 8px;  /* 스크롤바의 너비 */
+                  }
+                
+                  &::-webkit-scrollbar-thumb {
+                    height: 3px; /* 스크롤바의 길이 */
+                    background: #FF6D6D; /* 스크롤바의 색상 */
+                    border-radius: 10px;
+                  }
+                
+                  &::-webkit-scrollbar-track {
+                    background: linen;
+                    border-radius: 10px;
+                  }
+  
+                  .main-content-video {
+                      margin-top: 10px;
+                      margin-bottom: 10px;
+                      margin-right: 10px;
+                      width: 200px;
+                      //width: 100%;
+                      height: 100%;
+                      border-radius: 10px;
+      
+                      .main-content-footer {
+                          display: flex;
+                          justify-content: space-between;
+                          padding: 10px;
+                          background-color: #FF6D6D;
+                          width: auto;
+                          height: 60px;
+                          border-radius: 0 0 10px 10px;
+      
+                          .main-letter-wrap {
+                              flex-direction: column;
+      
+                              .main-footer-category {
+                                  color: #FFFFFF;
+                                  font-size: 11px;
+                                  margin-left: 10px;
+      
+                              }
+      
+                              .main-footer-title {
+                                  color: #FFFFFF;
+                                  font-weight: 700;
+                                  line-height: 30px;
+                                  margin-left: 10px;
+      
+                              }
+                          }
+                      }
+  
+  
+                      .main-bookmark {
+                          width: auto;
+                          height: auto;
+                      }
+                  }
+              }
+  
+              // 수정전 css
+              .video {
+                  margin-top: 10px;
+                  width: 200px;
+                  background-color: #f2f7fe;
+  
+                  .imgbox {
+                      width: 100%;
+                      height: 120px;
+                      background-color: #bad0ef;
+                  }
+  
+                  >div {
+                      padding: 10px;
+  
+                      .cate {
+                          font-size: 12px;
+                      }
+  
+                      .title {
+                          margin-top: 2px;
+                          font-weight: 900;
+                      }
+  
+                  }
+  
+              }
+          }
+      }
+  }
+}

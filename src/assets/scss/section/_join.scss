@@ -1,0 +1,161 @@
+.join-container {
+  min-height: 100vh;
+  padding: 60px 30px;
+
+  .join-header {
+    margin-top: 60px;
+
+    .join-title {
+      font-weight: 900;
+      font-size: 30px;
+    }
+
+    .join-text {
+      color: #93988F;
+      font-weight: 700;
+      line-height: 1.2;
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  }
+
+  .join-input {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    
+    .input-title{
+      font-size: 12px;
+      font-weight: bold;
+      color: #262626;
+      margin-top: 20px;
+    }
+
+    .input-wrap {
+      display: flex;
+      border-radius: 8px;
+      padding: 16px;
+      margin-top: 8px;
+      background-color: white;
+      border: 1px solid #e2e0e0;
+
+      .input {
+        width: 100%;
+        outline: none;
+        border: none;
+        height: 17px;
+        font-size: 14px;
+      }
+      
+      ::placeholder {
+        color: #dadada;
+      }
+    }
+      
+    :focus-within {
+      border: 1px solid #FF6D6D;
+    }
+    
+    .useId {
+      margin-top: 8px;
+      font-size: 12px;
+      color: #ef0000;
+    }
+
+    .pweyes {
+      position: relative;
+      width: 100%;
+      
+      button {
+        background-image: url(../../img/login_eye_closed.svg);
+        background-repeat: no-repeat;
+        background-color: inherit;
+        background-size: cover;
+        position: absolute;
+        width: 21px;
+        height: 21px;
+        right:15px;
+        border: none;
+        transform: translateY(-10%);
+          }
+      }
+    }
+
+    .errorMessageWrap {
+      margin-top: 8px;
+      color: #ef0000;
+      font-size: 12px;
+    }
+
+    .bottomButton {
+        width: 100%;
+        background-color: var(--maincolor01);
+        padding: 18px 0 15px;
+        border-radius: 10px;
+        color: var(--white);
+        font-size: 15px;
+        font-weight: 700;
+        margin: 20px 0 8px;
+    }
+
+    :disabled {
+      background-color: #dadada;
+      color: white;
+    }
+    .goLoginWrap {
+      display: flex; 
+      justify-content: center;     
+      align-items: center; 
+      margin-top: 15px;
+      font-size: 13px;
+      font-weight: 700;
+
+      .goToLogin {
+          display: flex;
+          justify-content: center;
+          color: var(--maincolor01);
+          margin-left: 7px;
+      }
+    }
+}
+
+.joincollect_wrap {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    img {
+        width: 40px;
+    }
+
+    h2 {
+        text-align: center;
+        font-weight: 900;
+        margin-top: 10px;
+        font-size: 24px;
+
+        strong {
+            font-weight: 900;
+            font-size: 32px;
+        }
+    }
+
+    p {
+        font-weight: 700;
+        font-size: 22px;
+        color: var(--black300);
+        margin-bottom: 60px;
+
+        strong {
+            font-weight: 900;
+        }
+
+        i {
+            color: var(--maincolor02);
+            font-weight: 900;
+        }
+    }
+}

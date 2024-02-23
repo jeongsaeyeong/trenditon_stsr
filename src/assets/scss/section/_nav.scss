@@ -1,0 +1,86 @@
+.Nav {
+  position: fixed;
+  top: 0;
+  background-color: var(--maincolor01);
+  height: 60px;
+  display: flex;
+  padding: 25px;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+
+  .logo {
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+  }
+
+  .hamburger-menu {
+    height: 30px;
+    width: 35px;
+    position: relative;
+    padding: 16px;
+    cursor: pointer;
+
+    .ham-bar {
+      width: 70%;
+      height: 3px;
+      border-radius: 25px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: transform .6s, opacity .8s, top .6s;
+      background-color: white;
+      
+      &.bar-top {
+          top: 25%;
+      }
+      
+      &.bar-bottom {
+          top: 75%
+      }
+    }
+    &.active {
+      .bar-top {
+        transform: translate(-50%, -50%) rotate(-315deg);
+        top: 50%
+      }
+  
+      .bar-mid {
+        opacity: 0;
+      }
+  
+      .bar-bottom {
+        transform: translate(-50%, -50%) rotate(-225deg);
+        top: 50%;
+      }
+    }
+
+  }
+
+  .showNav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    z-index: 1000;
+    top: 60px;
+    background-color: var(--maincolor01);
+    transform: translate(-25px, 0);
+    padding: 0 20px 20px 20px;
+    box-shadow: 0 12px 12px -12px rgba(0, 0, 0, 1);
+    border-radius: 0 0 20px 20px;
+
+    li {
+      padding: 10px;
+      color: white;
+      font-weight: bolder;
+    }
+    :hover {
+      background-color: white;
+      color: var(--maincolor01);
+      border-radius: 10px;
+    }
+  }
+}

@@ -1,0 +1,95 @@
+.favorite-form{
+  .return_btn {
+    margin-top: 100px;
+    margin-left: 30px;
+    background-color: #00000000;
+
+    img {
+        width: 15px;
+    }
+}
+  .favorite-header {
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 20px;
+      font-weight: 900;
+      font-size: 20px;
+  }
+  
+  .favorite-wrap {
+      background-color: #fbdcdc;
+      padding: 20px;
+      border-radius: 30px;
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+      padding-top: 30px;
+      height: 70vh;
+      overflow-y: scroll;
+      box-shadow: 0px 3px 0px 0px #a9a9a9;
+
+  
+      .favorite-li {
+          background-color: #FFFFFF;
+          padding: 18px 15px 15px;
+          margin-bottom: 15px;
+          border-radius: 10px;
+          font-size: 16px;
+          font-weight: 800;
+          color: #93988F;
+          transition: box-shadow 0.3s ease-in-out;
+  
+      }
+      &::-webkit-scrollbar-button:vertical:start:decrement {
+        display: block;
+        height: 35px; 
+      }
+      &::-webkit-scrollbar-button:vertical:end:increment {
+        display: block;
+        height: 35px;
+      }
+      &::-webkit-scrollbar {
+        width: 6px; 
+      }
+    
+      &::-webkit-scrollbar-thumb {
+        background: #ff7c7c; /* 스크롤바의 색상 */
+        border-radius: 10px;
+      }
+    
+      &::-webkit-scrollbar-track {
+        background-color: rgba(78, 78, 78, 0);
+        border-radius: 10px;
+      }
+  
+      .favorite-li.selected {
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
+  
+      .checkbox {
+          width: auto;
+  
+      }
+  
+  }
+  
+  .checkbutton {
+      display: block;
+      margin: 0 auto;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--maincolor01);
+      height: 35px;
+      padding: 20px;
+      line-height: 10px;
+      width: 80%;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--white);
+  }
+}

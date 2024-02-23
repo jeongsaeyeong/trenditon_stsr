@@ -1,0 +1,37 @@
+@font-face {
+    font-family: "nanumSquare";
+    font-weight: 300;
+    font-style: normal;
+    src:
+        url("https://cdn.jsdelivr.net/gh/websfont/nanumSquare/nanumSquare-Light.woff2") format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/websfont/nanumSquare/nanumSquare-Light.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "nanumSquare";
+    font-weight: 400;
+    font-style: normal;
+    src:
+        url("https://cdn.jsdelivr.net/gh/websfont/nanumSquare/nanumSquare-Regular.woff2") format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/websfont/nanumSquare/nanumSquare-Regular.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "nanumSquare";
+    font-weight: 700;
+    font-style: normal;
+    src: url("https://cdn.jsdelivr.net/gh/websfont/nanumSquare/nanumSquare-Bold.woff2") format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/websfont/nanumSquare/nanumSquare-Bold.woff") format("woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "nanumSquare";
+    font-weight: 800;
+    font-style: normal;
+    src: url("https://cdn.jsdelivr.net/gh/websfont/nanumSquare/nanumSquare-ExtraBold.woff2") format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/websfont/nanumSquare/nanumSquare-ExtraBold.woff") format("woff");
+    font-display: swap;
+}

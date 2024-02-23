@@ -1,0 +1,307 @@
+.timeset_wrap {
+    padding: 90px 30px 50px;
+    position: relative;
+    min-height: 100vh;
+
+    .retrun_btn {
+        background-color: #00000000;
+        position: absolute;
+        left: 30px;
+
+        .return {
+            width: 10px;
+        }
+    }
+
+    .timeset_btn {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        color: var(--black300);
+        border-radius: 10px;
+        padding: 16px 20px 12px;
+        background-color: var(--white200);
+        width: 100%;
+        outline: none;
+        line-height: 1.5;
+        align-items: center;
+
+        .timeset_btn :hover {
+            background-color: #EAF2FF;
+        }
+
+        .check_start,
+        .check_arrive {
+            width: 18px;
+            margin-bottom: 3px;
+        }
+    }
+
+    .mapSvg {
+        position: absolute;
+        right: 30px;
+        width: 25px;
+    }
+
+    >p {
+        font-size: 20px;
+        text-align: center;
+        font-weight: 700;
+        color: var(--black300);
+
+        strong {
+            font-weight: 900;
+            color: var(--black);
+        }
+
+        button {
+            top: 90px;
+        }
+    }
+
+    .start {
+        color: var(--black);
+        font-size: 24px;
+
+        strong {
+            color: #006FFD;
+        }
+    }
+
+    .map {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        >div {
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+
+            img {
+                width: 18px;
+            }
+        }
+
+        .search {
+            margin-top: 20px;
+            width: 100%;
+            align-items: center;
+
+            input {
+                width: 79%;
+            }
+
+            button {
+                margin-top: 0;
+                width: 20%;
+            }
+        }
+
+        button {
+            margin-top: 40px;
+        }
+    }
+
+    .choose_start {
+        margin-top: 20px;
+        background-color: var(--black400);
+        width: 100%;
+        height: 320px;
+        border-radius: 20px;
+    }
+
+    .bar {
+        margin-top: 10px;
+        width: 100%;
+        height: 18px;
+        border-radius: 50px;
+        background-color: var(--black400);
+    }
+
+    .timeset {
+        padding-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+
+        a {
+            text-align: left;
+            color: var(--black300);
+            border-radius: 10px;
+            padding: 18px 20px 14px;
+            background-color: var(--white100);
+            width: 100%;
+            outline: none;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        ::placeholder {
+            font-size: 15px;
+        }
+
+    }
+
+    .change {
+        margin-top: 30px;
+
+        p {
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 60px;
+            font-weight: 900;
+
+            strong {
+                margin-right: 10px;
+                font-size: 34px;
+                font-weight: 900;
+            }
+        }
+
+        button {
+            margin-top: 5px;
+        }
+    }
+
+    .userinput {
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        .input_box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+            input {
+                text-align: center;
+                line-height: 1.2px;
+                outline: none;
+                width: 130px;
+                border: 2px solid var(--maincolor01);
+                padding-top: 7px;
+                height: 50px;
+                border-radius: 15px;
+                margin-bottom: 8px;
+                font-size: 27px;
+                color: var(--black300);
+                font-weight: 700;
+            }
+
+           
+        }
+
+        p {
+            margin-left: 7px;
+            font-size: 34px;
+            line-height: 1;
+            font-weight: 900;
+
+            strong {
+                font-size: 24px;
+                font-weight: 900;
+            }
+        }
+        
+        .input_btn {
+            width: 100%;
+            margin-top: 50px;
+        }
+
+        button {}
+
+    }
+
+    >div {
+        button {
+            margin-top: 5px;
+            width: 100%;
+            background-color: var(--maincolor01);
+            padding: 18px 0 15px;
+            border-radius: 10px;
+            color: var(--white);
+            font-size: 15px;
+            font-weight: 700;
+        }
+    }
+
+    .start_btn {
+        margin-top: 30px;
+    }
+
+    .swiper {
+        z-index: 1;
+        left: 0;
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+        height: 220px;
+        background-color: #EAF2FF;
+        padding: 35px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        div {
+            div {
+                cursor: pointer;
+                display: flex;
+                width: 31%;
+                background-color: var(--white);
+                height: 130px;
+                flex-direction: column;
+                align-items: center;
+                border-radius: 10px;
+                padding: 20px 10px;
+
+                img {
+                    width: 18px;
+                }
+
+                p {
+                    font-size: 13px;
+                    padding-top: 10px;
+                }
+            }
+        }
+    }
+
+    .swiper-slide.selected {
+        background-color: #c3d1ff;
+    }
+
+    >.time {
+        font-size: 20px;
+        text-align: center;
+        font-weight: 900;
+        margin-top: 30px;
+        color: var(--black);
+
+        strong {
+            margin-right: 10px;
+            font-size: 34px;
+            font-weight: 900;
+        }
+    }
+
+    .going_btn {
+        margin-top: 10px;
+    }
+}
+
+.swiper-wrapper {
+    div {
+        width: 100px !important;
+        margin-right: 10px !important;
+    }
+}
+
+.swiper-pagination {
+    width: 100%;
+    margin-bottom: 10px;
+}

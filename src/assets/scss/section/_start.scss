@@ -1,0 +1,54 @@
+.fade-out-box {
+  display: inline-block;
+  width: 100%;
+  animation: fadeout 2s;
+
+  .start_wrap {
+    height: 100vh;
+    background: linear-gradient(to bottom, #ffffff 60%, #ff75758e 100%);
+
+    .header {
+        height: 48%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 60px;
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            img {
+                width: 100px;
+            }
+
+            h2 {
+                margin-top: 10px;
+                font-weight: 900;
+                text-align: center;
+                width: 100%;
+            }
+            
+        }
+
+        p {
+            strong {
+                margin: 0 2px;
+                font-weight: 900;
+                color: var(--maincolor02);
+            }
+        }
+    }
+
+    .picture {
+        height: 52%;
+        text-align: center;
+
+        img {
+            width: 80%;
+        }
+    }
+}
+}

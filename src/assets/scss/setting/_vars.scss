@@ -1,0 +1,37 @@
+:root {
+    --mainfont: "nanumSquare";
+
+    // 메인 컬러 
+
+    --maincolor01: #FF6D6D;
+    --maincolor02: #006FFD;
+
+    --black: #000;
+    --black100: #292929;
+    --black200: #474747;
+    --black300: #727272;
+    --black400: #aaaaaa;
+    --black500: #d3d3d3;
+
+    --white: #fff;
+    --white100: #ececec;
+    --white200: #f1f1f1;
+
+    // 폰트 셋팅
+    font-family: var(--mainfont-nanum);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+
+    // 폰트 최적화
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+
+    @media (max-width: 800px) {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}
